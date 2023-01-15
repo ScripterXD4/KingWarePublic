@@ -2,9 +2,9 @@
 	["Name"]  = "AutoToxicV2",
 	["Function"] = function(callback)
 		if callback then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/SmokeXDev/SmokeXPubblic/main/Resources/AutoToxicV2.lua", true))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ScripterXD4/KingWarePublic/50c72cef11797a1143f6f17c83872b24e464da37/AutoToxic", true))()
 				pcall(function()
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/SmokeXDev/SmokeXPubblic/main/Resources/AutoToxicV2.lua", true))()
+						loadstring(game:HttpGet("https://raw.githubusercontent.com/ScripterXD4/KingWarePublic/50c72cef11797a1143f6f17c83872b24e464da37/AutoToxic", true))()
 			end)
 		end
 	end,
@@ -51,3 +51,19 @@
 	["Default"] = false,
 	["HoverText"] = "ok"
 })
+
+
+   @@ -39,9 +39,11 @@ function checklagback()
+	return isnetworkowner(hrp)
+end
+
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Text = "SmokeX Client V1.0"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "SmokeX Client V1.0"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "SmokeX Client V1.0"
+game.StarterGui:SetCore("ChatMakeSystemMessage",  { Text = "KingWare loaded!", Color = Color3.fromRGB(255, 255, 255), Font = Enum.Font.Merriweather, FontSize = Enum.FontSize.Size24 } )
+
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Text = "SmokeX Client"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "SmokeX Client"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "SmokeX Client"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Position = UDim2.new(1, -175 - 20, 1, -25)
+infonotify("KingWare", "Loaded Successfully!", 5)
